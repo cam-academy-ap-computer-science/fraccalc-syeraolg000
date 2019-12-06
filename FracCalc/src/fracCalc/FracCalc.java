@@ -9,7 +9,7 @@ public class FracCalc {
     	Scanner userInput = new Scanner (System.in);
     	System.out.println("Enter a equation: ");
     	String input =  userInput.nextLine();
-    	produceAnswer(input);
+    	System.out.println(produceAnswer(input));
     	
     }
     // ** IMPORTANT ** DO NOT DELETE THIS FUNCTION.  This function will be used to test your code
@@ -21,8 +21,17 @@ public class FracCalc {
     // The function should return the result of the fraction after it has been calculated
     //      e.g. return ==> "1_1/4"
     public static String produceAnswer(String input) {
-   
-    	 return input; 
+  
+    	
+    	String operand1 = input;
+    	String operator = "";
+    	String operand2 = "";
+    	//System.out.println(operand1.indexOf(" "));
+    	int operand1index = operand1.indexOf("+");
+    	//System.out.println(operand1.substring(0,operand1index));
+    	System.out.println(operand1.substring(operand1index + 1));
+    	 return operand1;
+    	 
     // TODO: Implement this function to produce the solution to the input
         
                                                     
