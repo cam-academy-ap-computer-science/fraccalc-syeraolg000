@@ -34,7 +34,7 @@ public class FracCalc {
     		 
     	 }
     	 
-    // TODO: Implement this function to produce the solution to the input
+    // TODO: Implement this function to produce the solution to the input.
         
                                                     
     
