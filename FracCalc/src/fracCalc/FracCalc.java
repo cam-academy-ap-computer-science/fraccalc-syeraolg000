@@ -21,25 +21,27 @@ public class FracCalc {
     // The function should return the result of the fraction after it has been calculated
     //      e.g. return ==> "1_1/4"
     public static String produceAnswer(String input) {
-  
+    	int firstSpace = input.indexOf(' ');
+    	//String operand1 = input.substring(0, firstSpace);
+        String operand1.substring(0, 2);
+   
+    	return  operand1;
+    		
+    	}
     	
-    	String operand1 = input;
-    	String operator = "";
-    	String operand2 = "";
-    	//System.out.println(operand1.indexOf(" "));
-    	int operand1index = operand1.indexOf("+");
-    	//System.out.println(operand1.substring(0,operand1index));
-    	System.out.println(operand1.substring(operand1index + 1));
-    	 return operand1;
+    	
+    	
+    		 
+    	 }
     	 
     // TODO: Implement this function to produce the solution to the input
         
                                                     
-    }
+    
 
 
     // TODO: Fill in the space below with any helper methods that you think you will need
     
-}
+
 
 //System.out.println("");
