@@ -51,7 +51,7 @@ public class FracCalc {
 		}
 		else if (s.contains("/")) {
 			return"0";
-			//whole numbers else statement
+			//whole numbers else statement.
 
 		} 
 		else {
