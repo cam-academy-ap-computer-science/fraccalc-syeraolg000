@@ -44,7 +44,6 @@ public class FracCalc {
 	public static String findWholeNum(String s) {
 		//mixed numbers if statement
 		// mixed numbers contains underscore
-		//
 		if (s.contains("_")) {
 			return s.substring(0,s.indexOf('_'));    	    	
 			//fractions if else statement
@@ -52,7 +51,7 @@ public class FracCalc {
 		}
 		else if (s.contains("/")) {
 			return"0";
-			//whole numbers else statement.
+			//whole numbers else statement
 
 		} 
 		else {
@@ -70,6 +69,3 @@ public class FracCalc {
 	}
 
 } 
-
-    	 
-   
