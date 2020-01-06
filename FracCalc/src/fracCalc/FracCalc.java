@@ -23,19 +23,24 @@ public class FracCalc {
 	// input is a fraction string that needs to be evaluated.  For your program, this will be the user input.
 	//      e.g. input ==> "1/2 + 3/4"
 	//        
-	// The function should return the result of the fraction after it has been calculated
+	// The function should return the result of the fraction after it has been calculated.
 	//      e.g. return ==> "1_1/4"
 	public static String produceAnswer(String input) {
-		int firstSpace = input.indexOf(' ');   	
+	
+
+	int firstSpace = input.indexOf(' ');   	
 		String operand1 = input.substring(0, firstSpace);
 		input = input.substring(input.indexOf(' ') + 1);
 		String operator = input.substring(0, input.indexOf(' '));
 		input = input.substring(input.indexOf(' ') + 1);
 		String operand2 = input;
-		String Whole = findWholeNum(operand2);
-		String Numerator = findNumerator(operand2);
-		String Denominator = findDenominator(operand2);
-		return operand2;
+		
+		String op2Whole = findWholeNum(operand2);
+		String op2Numerator = findNumer(operand2);
+		String op2Denominator = findDenom(operand2);
+		
+		String chkPt2Answ = "whole:" + op2Whole + " numerator:" + op2Numerator + " denominator:" + op2Denominator;
+		return chkPt2Answ;
 
 	} 	
 
@@ -45,27 +50,38 @@ public class FracCalc {
 		//mixed numbers if statement
 		// mixed numbers contains underscore
 		if (s.contains("_")) {
-			return s.substring(0,s.indexOf('_'));    	    	
-			//fractions if else statement
-			//fractions contain a slash
+			return s.substring(0,s.indexOf('_'));    	    				
 		}
+		//fractions if else statement
+		//fractions contain a slash
 		else if (s.contains("/")) {
 			return"0";
-			//whole numbers else statement
+		 
+		//whole numbers else statement.
+		}else return s; 
+	}
+		
 
-		} 
-		else {
-			return s;
+	public static String findNumer(String s) {
+		// 5_1111/2222    22/333    234
+		if(s.contains("_")) {
+		return s.substring(s.indexOf('_') + 1, s.indexOf('/'));
+		}else if (s.contains("/")) {
+			return s.substring(0, s.indexOf('/'));
+		}else{
+			return "0";
 		}
-	}	
-
-	public static String findNumerator(String s) {
-
-		return s;
 	}
-	public static String findDenominator(String s) {
+	
+	public static String findDenom(String s) {
+		// 3_1/2    333/22  -322
+		if(s.contains("/")) {
+		    return s.substring(s.indexOf("/") + 1);
+		}else {
+			return "1";
+		}
+	
 
-		return s;
-	}
+}
+}
 
-} 
