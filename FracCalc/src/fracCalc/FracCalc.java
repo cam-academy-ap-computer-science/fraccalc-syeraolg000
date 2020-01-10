@@ -39,6 +39,10 @@ public class FracCalc {
 		String op2Numerator = findNumer(operand2);
 		String op2Denominator = findDenom(operand2);
 		
+		String op1Whole = findWholeNum(operand1);
+		String op1Numerator = findNumer(operand1);
+		String op1Denominator = findDenom(operand1);
+		
 		String chkPt2Answ = "whole:" + op2Whole + " numerator:" + op2Numerator + " denominator:" + op2Denominator;
 		return chkPt2Answ;
 
@@ -84,4 +88,3 @@ public class FracCalc {
 
 }
 }
-
