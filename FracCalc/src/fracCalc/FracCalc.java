@@ -35,15 +35,15 @@ public class FracCalc {
 		input = input.substring(input.indexOf(' ') + 1);
 		String operand2 = input;
 		
-		String op2Whole = findWholeNum(operand2);
-		String op2Numerator = findNumer(operand2);
-		String op2Denominator = findDenom(operand2);
+		Integer op2Whole = Integer.parseInt(findWholeNum(operand2));
+		Integer op2Numerator = Integer.parseInt(findNumer(operand2));
+		Integer op2Denominator = Integer.parseInt(findDenom(operand2));
 		
-		String op1Whole = findWholeNum(operand1);
-		String op1Numerator = findNumer(operand1);
-		String op1Denominator = findDenom(operand1);
-		
-		String chkPt2Answ = "whole:" + op2Whole + " numerator:" + op2Numerator + " denominator:" + op2Denominator;
+		Integer op1Whole = Integer.parseInt(findWholeNum(operand1));
+		Integer op1Numerator = Integer.parseInt(findNumer(operand1));
+		Integer op1Denominator = Integer.parseInt(findDenom(operand1));
+
+		String chkPt2Answ = " 1whole:" + op1Whole + " 2whole:" + op2Whole + " 1numerator:" + op1Numerator + " 2numerator:" + op2Numerator + " 1denominator " + op1Denominator +  " 2denominator:" + op2Denominator;
 		return chkPt2Answ;
 
 	} 	
@@ -84,7 +84,8 @@ public class FracCalc {
 		}else {
 			return "1";
 		}
-	
+	}
 
-}
+{
+	}
 }
