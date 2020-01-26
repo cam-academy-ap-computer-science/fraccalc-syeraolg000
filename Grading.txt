@@ -1,0 +1,13 @@
+Total Grade:  20/115
+
+Input Parsing: 15/15
+Addition & Subtraction: 0/20
+Multiplication & Division: 0/20
+Fraction Reduction: 0/15
+Output is a Mixed Fraction: 0/15
+Handles Mixed Fractions: 0/10
+Handles Negatives: 0/15
+Code Comments: 5/5
+
+Your input parsing is correct, which got you to Checkpoint 2, so you got all
+those points.  None of the rest worked at all.
